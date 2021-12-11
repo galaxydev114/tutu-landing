@@ -1,0 +1,208 @@
+.home {
+  margin-bottom: 7rem;
+
+  .tutu-logo {
+    position: absolute;
+    top: 45px;
+    left: 51px;
+  }
+
+  // Hero section
+  #hero {
+    background: $background-primary;
+
+    .hero-content {
+      margin-bottom: -5rem;
+
+      .hero-left-content {
+        padding-left: 135px;
+        margin-top: 9rem;
+  
+        .hero-text {
+          color: $text-white;
+    
+          h1 {
+            font-weight: 900;
+            font-size: 64px;
+            line-height: 70px;
+          }
+    
+          h6 {
+            font-size: 20px;
+            line-height: 140.62%;
+            margin-top: 39px;
+          }
+        }
+  
+        .tutu-join-box {
+          background: $background-gray;
+          border-radius: 10px;
+          padding: 19px 21px;
+          max-width: 562px;
+          margin-top: 2rem;
+  
+          h6 {
+            color: $text-yellow;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 70px;
+            text-align: center;
+          }
+  
+          .join-control {
+            // padding: 0 .8rem;
+            margin-top: 33px;
+  
+            // label {
+            //   font-size: 36px;
+            //   line-height: 54px;
+            //   color: $text-white;
+            //   margin-right: 0.7rem;
+            // }
+            input {
+              background: transparent;
+              border: none;
+              border-bottom: 3px solid $text-white;
+              width: 100%;
+              color: $text-white;
+              font-family: $font-family-primary;
+              font-size: 32px;
+              outline: none;
+            }
+            input::placeholder {
+              font-family: $font-family-primary;
+              color: $text-white;
+            }
+            input:focus::placeholder {
+              color: #ddd;
+              opacity: .3;
+            }
+          }
+  
+          button {
+            background-color: $background-gray-2;
+            border-radius: 15px;
+            color: $text-gray;
+            font-weight: 500;
+            font-size: 28px;
+            border: none;
+            width: 100%;
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            margin-bottom: 28px;
+            margin-top: 44px;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+            box-shadow: rgb(27 31 35 / 10%) 0 1px 0;
+            box-sizing: border-box;
+            touch-action: manipulation;
+          }
+          button {
+            &:hover {
+              background-color: #dbdada;
+            }
+            &:active {
+              background-color: #dddbdb;
+              box-shadow: rgb(20 70 32 / 20%) 0 1px 0 inset;
+            }
+          }
+        }
+      }
+  
+      .hero-img img {
+        max-height: 90vh;
+      }
+    }
+  }
+
+  // App download section
+  .app-download {
+    margin-top: 5rem;
+    padding: 10rem 0 1rem 0;
+
+    .app-download-promotion {
+      padding-right: 5rem;
+
+      .promotion-text {
+        margin-top: 4rem;
+  
+        h1 {
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 65px;
+          text-align: right;
+          color: $text-gray;
+        }
+      }
+      .app-download-btn {
+        font-weight: 500;
+        font-size: 42px;
+        line-height: 70px;
+        color: $text-black;
+        background-color: $background-primary;
+        border-radius: 15px;
+        border: none;
+        padding: 0.5rem 5rem;
+        margin-top: 6rem;
+        -webkit-transition: 0.3s;
+        transition: 0.3s;
+      }
+      .app-download-btn:hover {
+        background-color: $primary-btn-hover-background;
+      }
+    }
+  }
+
+  // How it work section
+  #how-it-work {
+    margin-top: 10rem;
+  }
+
+  // Join promotion section
+  .join-promotion {
+    background-color: $background-primary;
+  }
+
+  // Excellent app section
+  .excellent-app {
+    text-align: center;
+    margin-top: 7rem;
+
+    h1 {
+      font-size: 32px;
+      line-height: 48px;
+      color: $text-black;
+    }
+    p {
+      font-size: 18px;
+      line-height: 135.94%;
+      color: $text-black;
+    }
+    .excellent-app-block {
+      background-color: $background-dark;
+      margin-top: 64px;
+
+      img {
+        margin-bottom: -50px;
+        margin-top: 50px;
+      }
+
+      .excellent-app-text {
+        text-align: left;
+
+        h1 {
+          font-size: 64px;
+          line-height: 64px;
+          color: $text-yellow;
+          margin-bottom: 3rem;
+        }
+        a {
+          font-size: 18px;
+          line-height: 140.62%;
+          color: $text-white;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+// Styles for the Tutu website
+
+// Global Styles
+@import 'fonts';
+@import 'variables';
+@import 'base';
+
+// Components
+@import 'components/footer';
+
+// Pages
+@import 'pages/home';
+
+// Plugins
+@import '~bootstrap/scss/bootstrap';

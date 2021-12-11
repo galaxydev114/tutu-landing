@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 import {
   // Redirect,
   Route,
   Switch
-} from "react-router-dom";
+} from 'react-router-dom';
 
 import Home from '../pages/Home';
 
@@ -28,7 +28,7 @@ const RegularRoute = ({component: Component, ...rest}) => (
 
 const Router = ({match}) => (
   <Switch>
-    <RegularRoute exact path="/" component={Home}/>
+    <RegularRoute exact path='/' component={Home}/>
   </Switch>
 );
 

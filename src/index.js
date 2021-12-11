@@ -1,5 +1,5 @@
-import React from "react";
-import ReactDOM from "react-dom";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
 import NextApp from './NextApp';
 import * as serviceWorker from './serviceWorker';

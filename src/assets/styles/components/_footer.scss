@@ -1,0 +1,30 @@
+// Footer Styles
+#footer {
+  background-color: $background-dark;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+
+  .footer-top {
+    // ul.footer-links {
+    //   li {
+    //     display: inline-block;
+
+    //     a {
+    //       font-weight: bold;
+    //       font-size: 14px;
+    //       line-height: 140.62%;
+    //       color: $text-yellow;
+    //       text-decoration: none;
+    //     }
+    //   }
+    // }
+
+    .footer-link a {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 140.62%;
+      color: $text-yellow;
+      text-decoration: none;
+    }
+  }
+}

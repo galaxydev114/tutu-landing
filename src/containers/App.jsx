@@ -1,10 +1,10 @@
-import React from "react";
-import { useRouteMatch } from "react-router-dom";
+import React from 'react';
+import { useRouteMatch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'connected-react-router';
 import configureStore, { history } from '../appRedux/store';
 
-import Router from "../routes/index";
+import Router from '../routes/index';
 
 import Footer from './Footer';
 
@@ -22,7 +22,7 @@ const App = () => {
       </ConnectedRouter>
     </Provider>
   );
-}
+};
 
 
 export default App;
