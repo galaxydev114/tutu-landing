@@ -26,6 +26,10 @@ p {
   font-family: $font-family-primary;
 }
 
+input, input::placeholder {
+  font-family: $font-family-primary;
+}
+
 .yellow-text {
   color: $text-yellow;
 }

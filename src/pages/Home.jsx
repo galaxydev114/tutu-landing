@@ -20,7 +20,7 @@ export default function Home() {
                 <h6>Digite seu Email e crie sua conta agora!</h6>
                 <div className="join-control d-flex align-items-center justify-content-center px-lg-5 px-md-4 px-sm-2 px-0">
                   {/* <label>EMAIL</label> */}
-                  <input type="text" className="email-input" placeholder="E-MAIL" />
+                  <input type="text" className="email-input" placeholder="Seu e-mail" />
                 </div>
                 <div className="px-lg-3 px-md-2 px-sm-1 px-0">
                   <button type="button">Criar conta TUTU gtatuita</button>
@@ -36,14 +36,14 @@ export default function Home() {
       <div id="app-download" className="app-download">
         <Container fluid>
           <Row>
-            <Col lg={6} className="ps-lg-4">
+            <Col lg={6} className="ps-lg-4 text-lg-start text-md-center">
               <img src={require('../assets/images/app-download.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
             </Col>
-            <Col lg={6} className="app-download-promotion">
-              <div className="promotion-text">
-                <h1>Aprender a cuidar do dinheiro desde a infância é <span className="yellow-text">essencial</span></h1>
-              </div>
-              <div className="text-end">
+            <Col lg={6} className="d-flex align-items-center pe-lg-4 text-lg-end">
+              <div className="app-download-promotion">
+                <div className="promotion-text">
+                  <h1>Aprender a cuidar do dinheiro desde a infância é <span className="yellow-text">essencial</span></h1>
+                </div>
                 <button type="button" className="app-download-btn">BAIXE O APP AGORA</button>
               </div>
             </Col>
@@ -51,33 +51,45 @@ export default function Home() {
         </Container>
       </div>
       <div id="how-it-work">
-        <Container fluid>
+        <Container fluid className="how-it-work-content">
           <Row>
-            <Col lg={6} className="p-0">
+            <Col lg={6} className="p-0 how-it-work-left-content text-center">
               <img src={require('../assets/images/hand-phone.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
             </Col>
-            <Col lg={6}>
+            <Col lg={6} className="d-flex align-items-center">
+              <div className="how-it-work-right-content">
+                <h1>Como funciona</h1>
+                <p>Lorem ipsum ut nisi mauris donec litora ante, massa mi id curabitur commodo duis habitant, ligula metus est nec magna elit. integer ad torquent amet interdum consequat viverra gravida imperdiet ad, habitasse sodales elementum curabitur mauris porttitor elementum egestas.</p>
+                <Link to="#" className="readmore-btn">SAIBA MAIS</Link>
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
       <div id="join-promotion" className="join-promotion">
         <Container fluid>
-          <Row>
-            <Col lg={6}>
-              <div className="join-promotion-text">
+          <Row className="join-promotion-contnet">
+            <Col lg={6} className="text-end">
+              <div className="join-promotion-text text-start">
                 <h1>Prepare-se para começar!</h1>
                 <h2>Casastre-se agora</h2>
               </div>
             </Col>
-            <Col lg={6}>
-
+            <Col lg={6} className="d-flex align-items-center">
+              <div className="join-follow-control d-flex align-items-center">
+                <input type="text" placeholder="Seu e-mail" />
+                <button type="button">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                  </svg>
+                </button>
+              </div>
             </Col>
           </Row>
         </Container>
       </div>
       <div id="excellent-app" className="excellent-app">
-        <h1>LOREM IPSUM</h1>
+        <h1>Lorem Ipsum</h1>
         <p>Lorem ipsum ut nisi mauris donec litora ante, massa mi id curabitur commodo duis habitant</p>
         <Container>
           <div className="excellent-app-block mx-lg-5">

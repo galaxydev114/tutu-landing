@@ -5,6 +5,14 @@
     position: absolute;
     top: 45px;
     left: 51px;
+
+    @media (max-width: 992px) {
+      left: 17px;
+    }
+
+    @media (max-width: 600px) {
+      left: 14px;
+    }
   }
 
   // Hero section
@@ -17,6 +25,18 @@
       .hero-left-content {
         padding-left: 135px;
         margin-top: 9rem;
+
+        @media (max-width: 1370px) {
+          padding-left: 51px;
+        }
+
+        @media (max-width: 992px) {
+          padding-left: 17px;
+        }
+
+        @media (max-width: 600px) {
+          padding-left: 14px;
+        }
   
         .hero-text {
           color: $text-white;
@@ -37,7 +57,7 @@
         .tutu-join-box {
           background: $background-gray;
           border-radius: 10px;
-          padding: 19px 21px;
+          padding: 35px 21px 45px 21px;
           max-width: 562px;
           margin-top: 2rem;
   
@@ -45,7 +65,7 @@
             color: $text-yellow;
             font-weight: 500;
             font-size: 26px;
-            line-height: 70px;
+            line-height: 37px;
             text-align: center;
           }
   
@@ -68,6 +88,7 @@
               font-family: $font-family-primary;
               font-size: 32px;
               outline: none;
+              font-weight: 300;
             }
             input::placeholder {
               font-family: $font-family-primary;
@@ -89,7 +110,7 @@
             width: 100%;
             padding-top: .5rem;
             padding-bottom: .5rem;
-            margin-bottom: 28px;
+            // margin-bottom: 28px;
             margin-top: 44px;
             -webkit-transition: 0.3s;
             transition: 0.3s;
@@ -111,6 +132,10 @@
   
       .hero-img img {
         max-height: 90vh;
+
+        @media (max-width: 992px) {
+          display: none;
+        }
       }
     }
   }
@@ -123,15 +148,30 @@
     .app-download-promotion {
       padding-right: 5rem;
 
+      @media (max-width: 1350px) {
+        padding-right: 3rem;
+      }
+
+      @media (max-width: 1280px) {
+        padding-right: 0;
+      }
+
+      @media (max-width: 992px) {
+        margin-top: 3rem;
+      }
+
       .promotion-text {
-        margin-top: 4rem;
+        // margin-top: 4rem;
   
         h1 {
           font-weight: 600;
           font-size: 64px;
           line-height: 65px;
-          text-align: right;
           color: $text-gray;
+
+          @media (max-width: 1200px) {
+            // font-size: 57px;
+          }
         }
       }
       .app-download-btn {
@@ -146,9 +186,24 @@
         margin-top: 6rem;
         -webkit-transition: 0.3s;
         transition: 0.3s;
+
+        @media (max-width: 1350px) {
+          padding: 0.5rem 3rem;
+        }
+
+        @media (max-width: 1200px) {
+          margin-top: 3rem;
+          padding: 0.5rem 2rem;
+        }
       }
       .app-download-btn:hover {
         background-color: $primary-btn-hover-background;
+      }
+    }
+
+    img {
+      @media (min-width: 992px) and (max-width: 1200px) {
+        width: 100%;
       }
     }
   }
@@ -156,11 +211,156 @@
   // How it work section
   #how-it-work {
     margin-top: 10rem;
+    padding-top: 10rem;
+
+    .how-it-work-left-content {
+      background-color: $background-gray;
+
+      img {
+        margin-top: -151px;
+
+        @media (min-width: 992px) and (max-width: 1250px) {
+          width: 100%;
+        }
+
+        @media (max-width: 1150px) {
+          margin-top: -141px;
+        }
+
+        @media (max-width: 1120px) {
+          margin-top: -131px;
+        }
+      }
+    }
+
+    .how-it-work-right-content {
+      padding: 0 120px;
+
+      @media (max-width: 1440px) {
+        padding: 0 80px;
+      }
+
+      @media (max-width: 1250px) {
+        padding: 0 60px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1130px) {
+        padding: 0 20px;
+      }
+
+      @media (max-width: 992px) {
+        padding: 2rem;
+      }
+
+      h1 {
+        font-size: 32px;
+        line-height: 140.62%;
+        color: $text-black;
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 140.62%;
+        text-align: justify;
+        color: $text-black;
+        padding: 20px 0 52px 0;
+
+        @media (min-width: 992px) and (max-width: 1130px) {
+          padding: 0 0 25px 0;
+        }
+      }
+
+      .readmore-btn {
+        background-color: $background-gray;
+        border-radius: 5px;
+        color: $text-white;
+        font-size: 18px;
+        line-height: 134.77%;
+        text-decoration: none;
+        padding: 18px 51px;
+
+        &:hover {
+          background-color: $gray-btn-hover-background;
+        }
+      }
+    }
   }
 
   // Join promotion section
   .join-promotion {
     background-color: $background-primary;
+    padding: 69px 0;
+
+    .join-promotion-content {
+      // margin: 0 187px;
+    }
+
+    .join-promotion-text {
+      display: inline-block;
+      padding-right: 2.5rem;
+
+      h1 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 140.62%;
+        color: $text-gray;
+      }
+
+      h2 {
+        font-size: 32px;
+        line-height: 140.62%;
+        color: $text-gray;
+        margin-bottom: 0;
+      }
+    }
+
+    .join-follow-control {
+      width: 100%;
+      max-width: 550px;
+      padding-left: 67px;
+
+      input {
+        background: rgb(255 255 255 / 80%);
+        // border: 3px solid #cfd7de;
+        border: 3px solid $dark-color;
+        box-sizing: border-box;
+        border-radius: 6px 0 0 6px;
+        padding: 10px;
+        outline: none;
+        width: 100%;
+        font-size: 27px;
+        line-height: 45px;
+
+        &:focus {
+          background: rgb(255 255 255 / 100%);
+        }
+
+        &::placeholder {
+          font-weight: 600;
+        }
+      }
+
+      button {
+        height: 71px;
+        width: 71px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $background-dark;
+        color: #ffffff;
+        font-size: 29px;
+        border: none;
+        border-radius: 0 5px 5px 0;
+        transition: 0.3s;
+
+        &:hover {
+          // background-color: $dark-btn-hover-background;
+          svg {
+            fill: $text-yellow;
+          }
+        }
+      }
+    }
   }
 
   // Excellent app section
