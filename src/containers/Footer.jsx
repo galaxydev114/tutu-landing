@@ -8,10 +8,13 @@ export default function Footer() {
       <div id="footer" className="footer">
         <Container>
           <div className="footer-top">
+            <div className="footer-top-brand">
+              <img src={require('../assets/images/logo.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
+            </div>
             <ul className="list-unstyled">
               <li className="footer-link"><Link to="#">Sobre a TUTU</Link></li>
               <li className="footer-link"><Link to="#">Metodologia</Link></li>
-              <li className="footer-brand"><img src={require('../assets/images/logo.png').default} alt="" onDragStart={(e) => e.preventDefault()} /></li>
+              <li className="footer-brand d-none d-md-block"><img src={require('../assets/images/logo.png').default} alt="" onDragStart={(e) => e.preventDefault()} /></li>
               <li className="footer-link"><Link to="#">Blog</Link></li>
               <li className="footer-link"><Link to="#">Fale com a gente</Link></li>
             </ul>

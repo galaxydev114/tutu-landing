@@ -4,6 +4,14 @@
   padding-top: 110px;
   padding-bottom: 25px;
 
+  @include respond-to($mobile-only) {
+    padding-top: 70px;
+  }
+
+  @include respond-to($small-mobile) {
+    padding-top: 50px;
+  }
+
   .footer-top {
     max-width: 1000px;
     margin: auto;
@@ -11,9 +19,30 @@
     border-bottom-style: outset;
     padding: 20px 5px 40px 5px;
 
+    .footer-top-brand {
+      margin-bottom: 2rem;
+      display: none;
+
+      @include respond-to($mobile-only) {
+        display: block;
+      }
+
+      @include respond-to($small-mobile) {
+        display: block;
+      }
+    }
+
     ul {
       justify-content: space-between;
       display: flex;
+
+      @include respond-to($small-mobile) {
+        display: inline-block;
+
+        li {
+          margin-top: 1.7rem;
+        }
+      }
 
       .footer-link a {
         font-weight: bold;

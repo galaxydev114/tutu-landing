@@ -69,13 +69,13 @@ export default function Home() {
       <div id="join-promotion" className="join-promotion">
         <Container fluid>
           <Row className="join-promotion-contnet">
-            <Col lg={6} className="text-end">
+            <Col lg={6} className="text-lg-end">
               <div className="join-promotion-text text-start">
                 <h1>Prepare-se para começar!</h1>
                 <h2>Casastre-se agora</h2>
               </div>
             </Col>
-            <Col lg={6} className="d-flex align-items-center">
+            <Col lg={6} className="d-flex align-items-lg-center">
               <div className="join-follow-control d-flex align-items-center">
                 <input type="text" placeholder="Seu e-mail" />
                 <button type="button">
@@ -92,13 +92,13 @@ export default function Home() {
         <h1>Lorem Ipsum</h1>
         <p>Lorem ipsum ut nisi mauris donec litora ante, massa mi id curabitur commodo duis habitant</p>
         <Container>
-          <div className="excellent-app-block mx-lg-5">
+          <div className="excellent-app-block mx-xl-5 mx-lg-3">
             <Row>
-              <Col lg={6}>
+              <Col lg={6} className="px-xl-2 px-5">
                 <img src={require('../assets/images/excellent-app.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
               </Col>
-              <Col lg={6} className="d-flex align-items-center justify-content-center">
-                <div className="excellent-app-text px-lg-5">
+              <Col lg={6} className="d-flex align-items-center justify-content-center mt-5 mt-lg-0">
+                <div className="excellent-app-text px-md-5 px-4 pb-lg-0 pb-5 mt-5 mt-lg-0">
                   <h1>Prático, rápido e seguro.</h1>
                   <Link to="#">Saiba mais</Link>
                 </div>

@@ -37,6 +37,10 @@
         @media (max-width: 600px) {
           padding-left: 14px;
         }
+
+        @include respond-to($small-mobile) {
+          margin-top: 8rem;
+        }
   
         .hero-text {
           color: $text-white;
@@ -45,12 +49,21 @@
             font-weight: 900;
             font-size: 64px;
             line-height: 70px;
+
+            @include respond-to($small-mobile) {
+              font-size: 47px;
+              line-height: 57px;
+            }
           }
     
           h6 {
             font-size: 20px;
             line-height: 140.62%;
             margin-top: 39px;
+
+            @include respond-to($small-mobile) {
+              margin-top: 27px;
+            }
           }
         }
   
@@ -67,6 +80,11 @@
             font-size: 26px;
             line-height: 37px;
             text-align: center;
+
+            @include respond-to($small-mobile) {
+              font-size: 23px;
+              line-height: 31px;
+            }
           }
   
           .join-control {
@@ -89,6 +107,11 @@
               font-size: 32px;
               outline: none;
               font-weight: 300;
+
+              @include respond-to($small-mobile) {
+                font-size: 23px;
+                border-bottom: 2px solid $text-white;
+              }
             }
             input::placeholder {
               font-family: $font-family-primary;
@@ -108,8 +131,8 @@
             font-size: 28px;
             border: none;
             width: 100%;
-            padding-top: .5rem;
-            padding-bottom: .5rem;
+            padding-top: .7rem;
+            padding-bottom: .7rem;
             // margin-bottom: 28px;
             margin-top: 44px;
             -webkit-transition: 0.3s;
@@ -117,6 +140,10 @@
             box-shadow: rgb(27 31 35 / 10%) 0 1px 0;
             box-sizing: border-box;
             touch-action: manipulation;
+
+            @include respond-to($small-mobile) {
+              font-size: 23px;
+            }
           }
           button {
             &:hover {
@@ -145,6 +172,10 @@
     margin-top: 5rem;
     padding: 10rem 0 1rem 0;
 
+    @include respond-to($small-mobile) {
+      padding: 7rem 0 1rem 0;
+    }
+
     .app-download-promotion {
       padding-right: 5rem;
 
@@ -169,8 +200,9 @@
           line-height: 65px;
           color: $text-gray;
 
-          @media (max-width: 1200px) {
-            // font-size: 57px;
+          @include respond-to($small-mobile) {
+            font-size: 47px;
+            line-height: 57px;
           }
         }
       }
@@ -195,6 +227,11 @@
           margin-top: 3rem;
           padding: 0.5rem 2rem;
         }
+
+        @include respond-to($small-mobile) {
+          font-size: 31px;
+          line-height: 53px;
+        }
       }
       .app-download-btn:hover {
         background-color: $primary-btn-hover-background;
@@ -205,6 +242,10 @@
       @media (min-width: 992px) and (max-width: 1200px) {
         width: 100%;
       }
+
+      @media (max-width: 700px) {
+        width: 100%;
+      }
     }
   }
 
@@ -212,6 +253,10 @@
   #how-it-work {
     margin-top: 10rem;
     padding-top: 10rem;
+
+    @include respond-to($small-mobile) {
+      padding-top: 7rem;
+    }
 
     .how-it-work-left-content {
       background-color: $background-gray;
@@ -229,6 +274,10 @@
 
         @media (max-width: 1120px) {
           margin-top: -131px;
+        }
+
+        @media (max-width: 700px) {
+          width: 100%;
         }
       }
     }
@@ -249,7 +298,11 @@
       }
 
       @media (max-width: 992px) {
-        padding: 2rem;
+        padding: 2rem 2rem 4rem 2rem;
+      }
+
+      @include respond-to($small-mobile) {
+        padding: 2rem 1rem 4rem 1rem
       }
 
       h1 {
@@ -291,13 +344,23 @@
     background-color: $background-primary;
     padding: 69px 0;
 
-    .join-promotion-content {
-      // margin: 0 187px;
+    .join-promotion-contnet {
+      @media (max-width: 992px) {
+        padding: 2rem;
+      }
+
+      @include respond-to($small-mobile) {
+        padding: 1rem;
+      }
     }
 
     .join-promotion-text {
       display: inline-block;
       padding-right: 2.5rem;
+
+      @media (max-width: 1100px) {
+        padding-right: 0;
+      }
 
       h1 {
         font-weight: bold;
@@ -319,6 +382,23 @@
       max-width: 550px;
       padding-left: 67px;
 
+      @media (max-width: 1440px) {
+        padding-left: 20px;
+      }
+
+      @media (min-width: 992px) and (max-width: 1200px) {
+        padding: 0 20px;
+      }
+
+      @media (max-width: 992px) {
+        padding: 0;
+        margin-top: 1.5rem;
+      }
+
+      // @include respond-to($small-mobile) {
+      // 	padding: 2rem 1rem 4rem 1rem
+      // }
+
       input {
         background: rgb(255 255 255 / 80%);
         // border: 3px solid #cfd7de;
@@ -337,6 +417,12 @@
 
         &::placeholder {
           font-weight: 600;
+        }
+
+        @include respond-to($small-mobile) {
+          font-size: 23px;
+          line-height: 37px;
+          border: 2px solid #414141;
         }
       }
 
@@ -358,6 +444,10 @@
           svg {
             fill: $text-yellow;
           }
+        }
+
+        @include respond-to($small-mobile) {
+          height: 61px;
         }
       }
     }
@@ -385,6 +475,10 @@
       img {
         margin-bottom: -50px;
         margin-top: 50px;
+
+        @media (max-width: 500px) {
+          width: 100%;
+        }
       }
 
       .excellent-app-text {
@@ -395,6 +489,11 @@
           line-height: 64px;
           color: $text-yellow;
           margin-bottom: 3rem;
+
+          @include respond-to($small-mobile) {
+            font-size: 46px;
+            line-height: 57px;
+          }
         }
         a {
           font-size: 18px;
