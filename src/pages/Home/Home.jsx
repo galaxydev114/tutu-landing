@@ -2,11 +2,14 @@ import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-export default function Home() {
+import HeroEmailSubscribingForm from './HeroEmailSubscribingForm';
+import SmallEmailSubscribingForm from './SmallEmailSubscribingForm';
+
+const Home = () => {
   return (
     <div className="home">
       <div className="tutu-logo">
-        <img src={require('../assets/images/logo.png').default} alt="Tutu" />
+        <img src={require('../../assets/images/logo.png').default} alt="Tutu" />
       </div>
       <div id="hero" className="hero d-flex align-items-center">
         <Container fluid>
@@ -16,19 +19,10 @@ export default function Home() {
                 <h1>O app de gestão financeira feito para crianças</h1>
                 <h6>Lorem ipsum ut nisi mauris donec litora ante, massa mi id curabitur commodo duis habitant, ligula metus est nec magna elit.</h6>
               </div>
-              <div className="tutu-join-box">
-                <h6>Digite seu Email e crie sua conta agora!</h6>
-                <div className="join-control d-flex align-items-center justify-content-center px-lg-5 px-md-4 px-sm-2 px-0">
-                  {/* <label>EMAIL</label> */}
-                  <input type="text" className="email-input" placeholder="Seu e-mail" />
-                </div>
-                <div className="px-lg-3 px-md-2 px-sm-1 px-0">
-                  <button type="button">Criar conta TUTU gtatuita</button>
-                </div>
-              </div>
+              <HeroEmailSubscribingForm/>
             </Col>
             <Col lg="6" className="hero-img text-end p-0">
-              <img src={require('../assets/images/hero-img.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
+              <img src={require('../../assets/images/hero-img.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
             </Col>
           </Row>
         </Container>
@@ -37,7 +31,7 @@ export default function Home() {
         <Container fluid>
           <Row>
             <Col lg={6} className="ps-lg-4 text-lg-start text-md-center">
-              <img src={require('../assets/images/app-download.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
+              <img src={require('../../assets/images/app-download.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
             </Col>
             <Col lg={6} className="d-flex align-items-center pe-lg-4 text-lg-end">
               <div className="app-download-promotion">
@@ -54,7 +48,7 @@ export default function Home() {
         <Container fluid className="how-it-work-content">
           <Row>
             <Col lg={6} className="p-0 how-it-work-left-content text-center">
-              <img src={require('../assets/images/hand-phone.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
+              <img src={require('../../assets/images/hand-phone.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
             </Col>
             <Col lg={6} className="d-flex align-items-center">
               <div className="how-it-work-right-content">
@@ -76,14 +70,7 @@ export default function Home() {
               </div>
             </Col>
             <Col lg={6} className="d-flex align-items-lg-center">
-              <div className="join-follow-control d-flex align-items-center">
-                <input type="text" placeholder="Seu e-mail" />
-                <button type="button">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
-                    <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                  </svg>
-                </button>
-              </div>
+              <SmallEmailSubscribingForm/>
             </Col>
           </Row>
         </Container>
@@ -95,7 +82,7 @@ export default function Home() {
           <div className="excellent-app-block mx-xl-5 mx-lg-3">
             <Row>
               <Col lg={6} className="px-xl-2 px-5">
-                <img src={require('../assets/images/excellent-app.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
+                <img src={require('../../assets/images/excellent-app.png').default} alt="" onDragStart={(e) => e.preventDefault()} />
               </Col>
               <Col lg={6} className="d-flex align-items-center justify-content-center mt-5 mt-lg-0">
                 <div className="excellent-app-text px-md-5 px-4 pb-lg-0 pb-5 mt-5 mt-lg-0">
@@ -109,4 +96,6 @@ export default function Home() {
       </div>
     </div>
   );
-}
+};
+
+export default Home;

@@ -18,15 +18,7 @@ h6 {
   font-family: $font-family-primary;
 }
 
-a {
-  font-family: $font-family-primary;
-}
-
-p {
-  font-family: $font-family-primary;
-}
-
-input, input::placeholder {
+p, a, span, input, input::placeholder {
   font-family: $font-family-primary;
 }
 
