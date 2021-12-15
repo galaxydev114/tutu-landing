@@ -205,11 +205,15 @@
         }
       }
   
-      .hero-img img {
-        // max-height: 90vh;
+      .hero-img {
+        overflow: hidden;
 
-        @media (max-width: 992px) {
-          display: none;
+        img {
+          // max-height: 90vh;
+  
+          @media (max-width: 992px) {
+            display: none;
+          }
         }
       }
     }
